@@ -64,6 +64,15 @@ body a:hover {
 
 }
 
+#photo:hover {
+
+    transition-duration: 1.2s;
+    background-image: url("../Images/Social_Medias/Github.png");
+    background-size: 100% 100%;
+    animation: rotate_icon 1s 2 linear;
+
+}
+
 .small-line-icon {
 
     height: 60%;
@@ -87,5 +96,27 @@ body a:hover {
     background-size: 105% 105%;
     background-repeat: no-repeat;
     background-position: center;
+
+}
+
+.small-line-icon:hover, .big-line-icon:hover {
+
+    animation: rotate_icon 1s 1 linear;
+
+}
+
+@keyframes rotate_icon {
+
+    from {
+
+        transform: rotateY(0deg);
+
+    }
+
+    to {
+
+        transform: rotateY(360deg);
+
+    }
 
 }
