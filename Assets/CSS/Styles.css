@@ -1,3 +1,5 @@
+/* Estilização: */
+
 * {
 
     box-sizing: border-box;
@@ -116,6 +118,127 @@ body a:hover {
     to {
 
         transform: rotateY(360deg);
+
+    }
+
+}
+
+/* Responsividade: */
+
+@media (max-width: 860px) {
+
+    .small-line {
+
+        display: none;
+
+    }
+
+    #big-line {
+
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .big-line-icon {
+
+        height: 15%;
+        width: 10%;
+
+    }
+
+    #photo {
+
+        height: 50%;
+        width: 30%;
+
+    }
+    
+}
+
+@media (max-width: 700px) {
+
+    #photo {
+
+        height: 40%;
+
+    }
+
+}
+
+@media (max-width: 530px) {
+
+    #big-line {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+
+    .big-line-icon {
+
+        height: 15%;
+        width: 25%;
+
+    }
+
+    #photo {
+
+        height: 30%;
+        width: 50%;
+
+    }
+
+}
+
+@media (max-width: 430px) {
+
+    .big-line-icon {
+
+        width: 30%;
+
+    }
+
+    #photo {
+
+        width: 60%;
+
+    }
+
+}
+
+@media (max-width: 200px) {
+
+    .big-line-icon {
+
+        height: 10%;
+
+    }
+
+    #photo {
+
+        height: 25%;
+        transform: none;
+
+    }
+
+}
+
+@media (max-width: 150px) {
+
+    .big-line-icon {
+
+        height: 8%;
+        width: 40%;
+
+    }
+
+    #photo {
+
+        height: 20%;
+        width: 80%;
 
     }
 
