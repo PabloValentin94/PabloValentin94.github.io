@@ -61,7 +61,7 @@ body a:hover {
     width: 23%;
     border-radius: 100%;
     border: 3px solid #FFFF00;
-    background-image: url("../Images/Photo.jpg");
+    background-image: url("../Images/Social_Medias/Photo.jpg");
     background-size: 100% 100%;
 
 }
@@ -106,6 +106,8 @@ body a:hover {
     animation: rotate_icon 1s 1 linear;
 
 }
+
+/* Animações: */
 
 @keyframes rotate_icon {
 
