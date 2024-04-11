@@ -1,0 +1,147 @@
+#about-me, #skills, #tools, #projects, #scholarity {
+
+    height: 100%;
+    width: 100%;
+    padding: 120px 50px 50px 50px;
+
+}
+
+#skills {
+
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 50px auto auto;
+    gap: 10px;
+
+}
+
+#skills h2 {
+
+    grid-column: 1 / span 2;
+    font-size: 30px;
+    font-weight: 600;
+    color: #FFFF00;
+
+}
+
+#skills .skill {
+
+    display: grid;
+    grid-template-rows: 40px auto;
+    border: 2px solid #FFFF00;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+#skills .skill h3 {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFF00;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+
+}
+
+#skills .skill .skill-icons {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+#skills .skill .skill-icons i {
+
+    border: 1px solid #FFFF00;
+    border-radius: 10px;
+    font-size: 100px;
+    padding: 15px;
+
+}
+
+#tools {
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 50px auto auto;
+    gap: 10px;
+
+}
+
+#tools h2 {
+
+    grid-column: 1 / span 3;
+    font-size: 30px;
+    font-weight: 600;
+    color: #FFFF00;
+
+}
+
+#tools i {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #FFFF00;
+    border-radius: 10px;
+    font-size: 150px;
+
+}
+
+#scholarity {
+
+    display: grid;
+    grid-template-rows: 50px auto auto;
+    gap: 10px;
+
+}
+
+#scholarity h2 {
+
+    font-size: 30px;
+    font-weight: 600;
+    color: #FFFF00;
+
+}
+
+#scholarity .school {
+
+    display: grid;
+    grid-template-columns: 500px auto;
+    border: 2px solid #FFFF00;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+#scholarity .school figure {
+
+    border-right: 2px solid #FFFF00;
+    overflow: hidden;
+
+}
+
+#scholarity .school figure img {
+
+    height: 100%;
+    width: 100%;
+
+}
+
+#scholarity .school article {
+
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    line-height: 65px;
+    text-align: center;
+    padding: 10px;
+
+}
