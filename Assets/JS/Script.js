@@ -17,10 +17,19 @@ const folha_direita = document.getElementById("folha_direita");
 function getResolution()
 {
 
-    if(window.innerWidth <= 1250)
+    document.getElementById("container").style.display = "none";
+
+    if(window.innerWidth < 1250)
     {
 
         window.location.assign("https://PabloValentin94.github.io/Basic_Portfolio/Index.html");
+
+    }
+
+    else
+    {
+
+        document.getElementById("container").style.display = "flex";
 
     }
 
