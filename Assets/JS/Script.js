@@ -19,10 +19,10 @@ const banner = document.getElementById("home").querySelector("aside");
 function getResolution()
 {
 
-    document.getElementById("container").style.display = "none";
-
     if(window.innerWidth < 1250)
     {
+
+        document.getElementById("container").style.display = "none";
 
         window.location.assign("https://PabloValentin94.github.io/Basic_Portfolio/Index.html");
 
@@ -56,7 +56,17 @@ function parallaxEffect()
 
 // Eventos:
 
-window.onload = getResolution();
+window.onload = () => {
+
+    getResolution();
+
+};
+
+document.body.onresize = () => {
+
+    getResolution();
+
+}
 
 document.getElementById("container").onscroll = () => {
 
