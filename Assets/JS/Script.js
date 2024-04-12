@@ -12,6 +12,8 @@ const folha_esquerda = document.getElementById("folha_esquerda");
 
 const folha_direita = document.getElementById("folha_direita");
 
+const banner = document.getElementById("home").querySelector("aside");
+
 // Funções:
 
 function getResolution()
@@ -47,6 +49,8 @@ function parallaxEffect()
     folha_esquerda.style.transform = "translateX(" + (-value * 0.5) + "px)";
 
     folha_direita.style.transform = "translateX(" + (value  * 0.5) + "px)";
+
+    banner.style.transform = "translateY(" + value + "px)";;
 
 }
 
