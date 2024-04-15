@@ -173,6 +173,14 @@
 
 }
 
+#scholarity .school figure a {
+
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+
+}
+
 #scholarity .school figure img {
 
     height: 100%;

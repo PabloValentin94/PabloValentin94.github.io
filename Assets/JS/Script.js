@@ -42,15 +42,20 @@ function parallaxEffect()
 
     const value = document.getElementById("container").scrollTop;
 
-    montanha_distante.style.transform = "translateY(" + (-value  * 0.25) + "px)";
+    if(value <= document.getElementById("home").clientHeight)
+    {
 
-    montanha_frontal.style.transform = "translateY(" + (-value * 0.4) + "px)";
+        montanha_distante.style.transform = "translateY(" + (-value  * 0.25) + "px)";
 
-    folha_esquerda.style.transform = "translateX(" + (-value * 0.5) + "px)";
+        montanha_frontal.style.transform = "translateY(" + (-value * 0.4) + "px)";
 
-    folha_direita.style.transform = "translateX(" + (value  * 0.5) + "px)";
+        folha_esquerda.style.transform = "translateX(" + (-value * 0.5) + "px)";
 
-    banner.style.transform = "translateY(" + value + "px)";;
+        folha_direita.style.transform = "translateX(" + (value  * 0.5) + "px)";
+
+        banner.style.transform = "translateY(" + value + "px)";
+
+    }
 
 }
 
