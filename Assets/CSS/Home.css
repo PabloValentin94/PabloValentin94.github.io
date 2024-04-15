@@ -37,22 +37,36 @@
 
 }
 
-#home aside figure {
+#home aside a {
 
     height: 70%;
     width: 35%;
+    background-color: #424242;
+    background-image: url("../Images/Photo.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #FFFF00;
     border-radius: 50%;
     overflow: hidden;
+    cursor: pointer;
+    transition: 2s;
 
 }
 
-#home aside figure img {
+#home aside a:hover {
+
+    background-image: url("../Images/GitHub.png");
+
+}
+
+/*#home aside a img {
 
     height: 100%;
     width: 100%;
     position: static;
 
-}
+}*/
 
 #home #title {
 

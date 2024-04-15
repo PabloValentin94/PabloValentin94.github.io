@@ -8,7 +8,6 @@
     grid-template-columns: repeat(3, auto);
     grid-template-rows: 50px auto auto;
     gap: 10px;
-    /* border: 1px solid #FFFFFF; */
     padding: 120px 50px 50px 50px;
 
 }
@@ -29,6 +28,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    background-color: #424242;
     border: 2px solid #FFFF00;
     border-radius: 10px;
     overflow: hidden;
