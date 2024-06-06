@@ -1,0 +1,140 @@
+/* Estilos: */
+
+#about-me {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+
+}
+
+#about-me figure {
+
+    height: 400px;
+    width: 400px;
+    background-image: url("../Images/Avatars/Saudando.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: Avatar_Transition 30s infinite ease;
+
+}
+
+#about-me article {
+
+    height: auto;
+    width: 700px;
+    padding: 10px;
+
+}
+
+#about-me article p {
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: var(--neutral-color);
+    line-height: 60px;
+    text-align: start;
+
+}
+
+/* Animações: */
+
+@keyframes Avatar_Transition {
+
+    0% {
+
+        background-image: url("../Images/Avatars/Saudando.png");
+
+    }
+
+    12.5% {
+
+        background-image: url("../Images/Avatars/Espiando.png");
+
+    }
+
+    25% {
+
+        background-image: url("../Images/Avatars/Fantasiando.png");
+
+    }
+
+    37.5% {
+
+        background-image: url("../Images/Avatars/Envergonhado.png");
+
+    }
+
+    50% {
+
+        background-image: url("../Images/Avatars/Questionando.png");
+
+    }
+
+    62.5% {
+
+        background-image: url("../Images/Avatars/Pensando.png");
+
+    }
+
+    75% {
+
+        background-image: url("../Images/Avatars/Analisando.png");
+
+    }
+
+    87.5% {
+
+        background-image: url("../Images/Avatars/Piscando.png");
+
+    }
+
+}
+
+/* Responsividade: */
+
+@media (max-width: 1350px) {
+
+    #about-me {
+
+        flex-direction: column;
+    
+    }
+
+    #about-me figure {
+
+        height: 300px;
+        width: 300px;
+    
+    }
+
+    #about-me article {
+
+        width: 100%;
+    
+    }
+
+    #about-me article p {
+
+        text-align: center;
+    
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    #about-me figure {
+
+        height: 200px;
+        width: 200px;
+    
+    }
+
+}

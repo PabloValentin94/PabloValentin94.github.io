@@ -1,0 +1,67 @@
+/* Estilos: */
+
+#tools {
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 50px auto auto;
+    gap: 10px;
+
+}
+
+#tools i {
+
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    font-size: 150px;
+
+}
+
+/* Responsividade: */
+
+@media (width > 1024px) {
+
+    #tools h2 {
+
+        grid-column: 1 / span 3;
+    
+    }
+
+}
+
+@media (width > 767px) and (width <= 1024px) {
+
+    #tools h2 {
+
+        grid-column: 1 / span 2;
+    
+    }
+
+}
+
+
+@media (max-width: 1024px) {
+
+    #tools {
+
+        grid-template-columns: auto auto;
+        grid-template-rows: 50px repeat(3, auto);
+    
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    #tools {
+
+        grid-template-columns: auto;
+        grid-template-rows: 50px repeat(6, auto);
+    
+    }
+
+}

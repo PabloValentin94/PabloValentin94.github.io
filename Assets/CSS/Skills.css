@@ -1,0 +1,92 @@
+/* Estilos: */
+
+#skills {
+
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 50px auto auto;
+    gap: 10px;
+
+}
+
+#skills .skill {
+
+    min-height: 300px;
+    display: grid;
+    grid-template-rows: 40px auto;
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+#skills .skill h3 {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: #000000;
+
+}
+
+#skills .skill .skill-icons {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+#skills .skill .skill-icons i {
+
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    font-size: 100px;
+    padding: 15px;
+
+}
+
+/* Responsividade: */
+
+@media (width > 1024px) {
+
+    #skills h2 {
+
+        grid-column: 1 / span 2;
+    
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    #skills {
+
+        grid-template-columns: auto;
+        grid-template-rows: 50px repeat(4, auto);
+    
+    }
+
+    #skills .skill .skill-icons {
+
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 15px;
+    
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    #skills .skill h3 {
+
+        font-size: 18px;
+    
+    }
+
+}

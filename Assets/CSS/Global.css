@@ -1,0 +1,42 @@
+/* Constantes: */
+
+:root {
+
+    --page-color: #3B3291;
+    --main-color: #FFFF00;
+    --neutral-color: #FFFFFF;
+
+}
+
+/* Estilos: */
+
+#about-me, #skills, #tools, #scholarity, #projects {
+
+    height: auto;
+    width: auto;
+    min-height: 100%;
+    min-width: 100%;
+    padding: 120px 50px 50px 50px;
+
+}
+
+#about-me h2, #skills h2, #tools h2, #scholarity h2, #projects h2 {
+
+    font-size: 30px;
+    font-weight: 600;
+    text-align: start;
+    color: var(--main-color);
+
+}
+
+/* Responsividade: */
+
+@media (max-width: 767px) {
+
+    #about-me h2, #skills h2, #tools h2, #scholarity h2, #projects h2 {
+
+        text-align: center;
+    
+    }
+
+}

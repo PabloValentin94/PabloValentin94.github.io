@@ -1,3 +1,14 @@
+/* Recursos: */
+
+@import url("./Global.css");
+
+@import url("./Home.css");
+@import url("./About-Me.css");
+@import url("./Skills.css");
+@import url("./Tools.css");
+@import url("./Projects.css");
+@import url("./Scholarity.css");
+
 /* Estilos: */
 
 * {
@@ -13,8 +24,8 @@ body {
 
     height: 100vh;
     width: 100vw;
-    background-color: #3B3291;
-    color: #FFFFFF;
+    background-color: var(--page-color);
+    color: var(--neutral-color);
     overflow: hidden;
 
 }
@@ -24,14 +35,14 @@ body {
     height: 100%;
     width: 100%;
     position: relative;
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     background-color: transparent;
     overflow-x: hidden;
     overflow-y: auto;
-    scrollbar-color: #FFFF00 #424242;
+    scrollbar-color: var(--main-color) #424242;
     scroll-behavior: smooth; /* Efeito de rolagem suave. */
     scroll-snap-type: y mandatory; /* A rolagem sempre irá parar sobre uma seção (Ou deveria.), não sendo possível parar em um pixel que corte algum conteúdo. */
     
@@ -69,7 +80,7 @@ header h1 span {
 
 header h1:hover span {
 
-    color: #FFFF00;
+    color: var(--main-color);
 
 }
 
@@ -90,7 +101,7 @@ header nav a {
     font-size: 20px;
     font-weight: 600;
     text-decoration: none;
-    color: #FFFFFF;
+    color: var(--neutral-color);
     cursor: pointer;
     transition: 0.5s;
 
@@ -98,7 +109,7 @@ header nav a {
 
 header nav a:nth-child(1), header nav a:hover {
 
-    background-color: #FFFF00;
+    background-color: var(--main-color);
     border-radius: 50%;
     color: #000000;
     padding: 15px;
@@ -110,7 +121,7 @@ header nav a:nth-child(1), header nav a:hover {
 header nav:hover > a:not(:hover) {
 
     background-color: transparent;
-    color: #FFFFFF;
+    color: var(--neutral-color);
 
 }
 
@@ -120,5 +131,17 @@ main {
     width: 100%;
     background-color: transparent;
     z-index: 1;
+
+}
+
+/* Responsividade: */
+
+@media (max-width: 1200px) {
+
+    header {
+
+        display: none;
+
+    }
 
 }
