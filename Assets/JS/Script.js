@@ -16,7 +16,7 @@ const banner = document.getElementById("home").querySelector("aside");
 
 // Funções:
 
-function getResolution()
+/*function getResolution()
 {
 
     if(window.innerWidth < 1250)
@@ -35,7 +35,7 @@ function getResolution()
 
     }
 
-}
+}*/
 
 function parallaxEffect()
 {
@@ -45,9 +45,23 @@ function parallaxEffect()
     if(value <= document.getElementById("home").clientHeight)
     {
 
-        montanha_distante.style.transform = "translateY(" + (-value  * 0.25) + "px)";
+        if(window.innerWidth > 1024)
+        {
 
-        montanha_frontal.style.transform = "translateY(" + (-value * 0.4) + "px)";
+            montanha_distante.style.transform = "translateY(" + (-value  * 0.25) + "px)";
+
+            montanha_frontal.style.transform = "translateY(" + (-value * 0.3) + "px)";
+
+        }
+
+        else
+        {
+
+            montanha_distante.style.transform = "translateY(" + (-value  * 0.15) + "px)";
+
+            montanha_frontal.style.transform = "translateY(" + (-value * 0.1) + "px)";
+
+        }
 
         folha_esquerda.style.transform = "translateX(" + (-value * 0.5) + "px)";
 
@@ -61,7 +75,7 @@ function parallaxEffect()
 
 // Eventos:
 
-window.onload = () => {
+/*window.onload = () => {
 
     getResolution();
 
@@ -71,7 +85,7 @@ document.body.onresize = () => {
 
     getResolution();
 
-}
+}*/
 
 document.getElementById("container").onscroll = () => {
 
