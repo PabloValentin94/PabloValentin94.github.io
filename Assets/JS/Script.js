@@ -79,7 +79,7 @@ function parallaxEffect()
 
     getResolution();
 
-};
+}
 
 document.body.onresize = () => {
 
@@ -90,5 +90,11 @@ document.body.onresize = () => {
 document.getElementById("container").onscroll = () => {
 
     parallaxEffect();
+
+}
+
+document.getElementById("choice").onchange = () => {
+
+    document.getElementById("navigation").href = document.getElementById("choice").value;
 
 }

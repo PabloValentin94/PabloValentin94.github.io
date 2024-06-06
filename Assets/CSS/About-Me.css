@@ -17,7 +17,7 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
-    animation: Avatar_Transition 30s ease infinite;
+    animation: Avatar_Transition 30s ease-in-out infinite normal;
 
 }
 
@@ -32,8 +32,7 @@
 #about-me article {
 
     height: auto;
-    width: 700px;
-    padding: 10px;
+    width: 775px;
 
 }
 

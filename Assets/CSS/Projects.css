@@ -16,8 +16,6 @@
     justify-content: center;
     position: relative;
     background-color: var(--contrast-color);
-    border: 2px solid var(--main-color);
-    border-radius: 10px;
     overflow: hidden;
 
 }
@@ -117,6 +115,10 @@
         grid-template-rows: 50px repeat(6, auto);
     
     }
+
+}
+
+@media (max-width: 700px) {
 
     #projects figure .project-description h3 {
 
