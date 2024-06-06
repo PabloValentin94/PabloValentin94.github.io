@@ -47,6 +47,12 @@
     
     }
 
+    #tools i {
+
+        font-size: 100px;
+    
+    }
+
 }
 
 @media (max-width: 767px) {
@@ -55,6 +61,12 @@
 
         grid-template-columns: auto;
         grid-template-rows: 50px repeat(6, auto);
+    
+    }
+
+    #tools i {
+
+        font-size: 80px;
     
     }
 
