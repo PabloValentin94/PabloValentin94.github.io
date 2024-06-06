@@ -42,22 +42,32 @@
 
     height: 300px;
     width: 300px;
-    background-color: #424242;
+    background-color: var(--contrast-color);
     background-image: url("../Images/Photo.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
     border: 1px solid var(--main-color);
     border-radius: 50%;
+    animation: Photo_Transition 3s ease infinite alternate running;
     overflow: hidden;
     cursor: pointer;
     transition: 2s;
 
 }
 
+/*
+
+    Sintaxe Contraída - Propriedade Animation:
+
+    animation: name duration timing-function delay iteration-count direction fill-mode play-state;
+
+*/
+
 #home aside a:hover {
 
-    background-image: url("../Images/GitHub.png");
+    background-image: url("../Images/GitHub.png") !important;
+    animation-play-state: paused;
 
 }
 
@@ -89,6 +99,24 @@
 
 }
 
+/* Animações: */
+
+@keyframes Photo_Transition {
+
+    from {
+
+        background-image: url("../Images/Photo.jpg");
+
+    }
+
+    to {
+
+        background-image: url("../Images/GitHub.png");
+
+    }
+
+}
+
 /* Responsividade: */
 
 @media (max-width: 1050px) {
@@ -98,6 +126,7 @@
         height: 600px;
         width: 450px;
         flex-direction: column;
+        background-color: var(--contrast-color);
     
     }
 
