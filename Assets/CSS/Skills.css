@@ -11,7 +11,6 @@
 
 #skills .skill {
 
-    min-height: 300px;
     display: grid;
     grid-template-rows: 40px auto;
     border: 2px solid var(--main-color);
@@ -52,7 +51,7 @@
 
 /* Responsividade: */
 
-@media (width > 1024px) {
+@media (min-width: 1024px) {
 
     #skills h2 {
 

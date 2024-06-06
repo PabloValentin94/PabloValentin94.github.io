@@ -11,7 +11,6 @@
 
 #tools i {
 
-    min-height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,7 +22,7 @@
 
 /* Responsividade: */
 
-@media (width > 1024px) {
+@media (min-width: 1024px) {
 
     #tools h2 {
 
@@ -33,23 +32,18 @@
 
 }
 
-@media (width > 767px) and (width <= 1024px) {
-
-    #tools h2 {
-
-        grid-column: 1 / span 2;
-    
-    }
-
-}
-
-
 @media (max-width: 1024px) {
 
     #tools {
 
         grid-template-columns: auto auto;
         grid-template-rows: 50px repeat(3, auto);
+    
+    }
+
+    #tools h2 {
+
+        grid-column: 1 / span 2;
     
     }
 

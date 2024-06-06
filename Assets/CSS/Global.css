@@ -10,7 +10,7 @@
 
 /* Estilos: */
 
-#about-me, #skills, #tools, #scholarity, #projects {
+#home, #about-me, #skills, #tools, #scholarity, #projects {
 
     height: auto;
     width: auto;
@@ -29,7 +29,23 @@
 
 }
 
+#skills .skill, #tools i, #projects figure {
+
+    min-height: 250px;
+
+}
+
 /* Responsividade: */
+
+@media (max-width: 1200px) {
+
+    #home, #about-me, #skills, #tools, #scholarity, #projects {
+
+        padding-top: 50px;
+    
+    }
+
+}
 
 @media (max-width: 767px) {
 
