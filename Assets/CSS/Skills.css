@@ -13,8 +13,6 @@
 
     display: grid;
     grid-template-rows: 40px auto;
-    border: 2px solid var(--main-color);
-    border-radius: 10px;
     overflow: hidden;
 
 }
