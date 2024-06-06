@@ -17,9 +17,17 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
-    animation: Avatar_Transition 30s infinite ease;
+    animation: Avatar_Transition 30s ease infinite;
 
 }
+
+/*
+
+    Sintaxe Contraída - Propriedade Animation:
+
+    animation: name duration timing-function delay iteration-count direction fill-mode play-state;
+
+*/
 
 #about-me article {
 

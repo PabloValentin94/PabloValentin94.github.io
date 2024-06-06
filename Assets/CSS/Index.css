@@ -42,7 +42,7 @@ body {
     background-color: transparent;
     overflow-x: hidden;
     overflow-y: auto;
-    scrollbar-color: var(--main-color) #424242;
+    scrollbar-color: var(--main-color) var(--soft-grey);
     scroll-behavior: smooth; /* Efeito de rolagem suave. */
     scroll-snap-type: y mandatory; /* A rolagem sempre irá parar sobre uma seção (Ou deveria.), não sendo possível parar em um pixel que corte algum conteúdo. */
     
