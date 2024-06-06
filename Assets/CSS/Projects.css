@@ -118,4 +118,10 @@
     
     }
 
+    #projects figure .project-description h3 {
+
+        display: none;
+    
+    }
+
 }
