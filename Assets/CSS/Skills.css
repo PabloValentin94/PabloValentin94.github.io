@@ -5,7 +5,6 @@
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: 50px auto auto;
-    gap: 10px;
 
 }
 
@@ -49,7 +48,7 @@
 
 /* Responsividade: */
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
 
     #skills h2 {
 

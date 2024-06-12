@@ -1,5 +1,9 @@
 // Constantes:
 
+const container = document.getElementById("container");
+
+const banner = document.getElementById("home").querySelector("aside");
+
 const montanha_distante = document.getElementById("montanha_distante");
 
 const montanha_frontal = document.getElementById("montanha_frontal");
@@ -12,30 +16,30 @@ const folha_esquerda = document.getElementById("folha_esquerda");
 
 const folha_direita = document.getElementById("folha_direita");
 
-const banner = document.getElementById("home").querySelector("aside");
-
 // Funções:
 
-/*function getResolution()
+function getWindowHeight()
 {
 
-    if(window.innerWidth < 1250)
+    if(window.innerHeight < 640)
     {
 
-        document.getElementById("container").style.display = "none";
-
-        window.location.assign("https://PabloValentin94.github.io/Basic_Portfolio/Index.html");
+        container.onscroll = null;
 
     }
 
     else
     {
 
-        document.getElementById("container").style.display = "flex";
+        container.onscroll = () => {
+
+            parallaxEffect();
+        
+        }
 
     }
 
-}*/
+}
 
 function parallaxEffect()
 {
@@ -75,21 +79,15 @@ function parallaxEffect()
 
 // Eventos:
 
-/*window.onload = () => {
+window.onload = () => {
 
-    getResolution();
+    getWindowHeight();
 
 }
 
-document.body.onresize = () => {
+window.onresize = () => {
 
-    getResolution();
-
-}*/
-
-document.getElementById("container").onscroll = () => {
-
-    parallaxEffect();
+    getWindowHeight();
 
 }
 

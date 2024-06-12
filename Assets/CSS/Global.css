@@ -11,12 +11,14 @@
 
 /* Estilos: */
 
-#home, #about-me, #skills, #tools, #projects, #scholarity {
+#about-me, #skills, #tools, #projects, #scholarity {
 
     height: auto;
     width: 100%;
     min-height: 100%;
-    padding: 150px 50px 50px 50px;
+    gap: 15px;
+    opacity: 1;
+    padding: 115px 15px 15px 15px;
 
 }
 
@@ -38,16 +40,6 @@
 }
 
 /* Responsividade: */
-
-@media (max-width: 1200px) {
-
-    #home, #about-me, #skills, #tools, #projects, #scholarity {
-
-        padding: 120px 20px 20px 20px;
-    
-    }
-
-}
 
 @media (max-width: 767px) {
 
