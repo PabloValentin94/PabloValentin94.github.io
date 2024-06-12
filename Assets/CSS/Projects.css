@@ -5,7 +5,6 @@
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: 50px auto auto;
-    gap: 10px;
 
 }
 
@@ -67,7 +66,7 @@
 
 /* Responsividade: */
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
 
     #projects h2 {
 
@@ -90,7 +89,7 @@
 }
 
 
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
 
     #projects {
 
@@ -113,16 +112,6 @@
 
         grid-template-columns: auto;
         grid-template-rows: 50px repeat(6, auto);
-    
-    }
-
-}
-
-@media (max-width: 700px) {
-
-    #projects figure .project-description h3 {
-
-        display: none;
     
     }
 
