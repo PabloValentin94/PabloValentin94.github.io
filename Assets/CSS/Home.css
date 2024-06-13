@@ -35,8 +35,9 @@
     justify-content: center;
     gap: 15px;
     border: 2px solid var(--main-color);
+    border-radius: 10px;
     padding: 15px;
-    z-index: 3;
+    z-index: 2;
 
 }
 
@@ -125,21 +126,9 @@
 
     #home aside {
 
-        height: 600px;
-        width: 450px;
-        flex-direction: column;
+        height: 300px;
+        width: 650px;
         background-color: var(--contrast-color);
-    
-    }
-
-}
-
-@media (max-width: 767px) {
-
-    #home aside {
-
-        height: 425px;
-        width: 350px;
     
     }
 
@@ -159,6 +148,18 @@
     #home #title h2 {
     
         font-size: 20px;
+    
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    #home aside {
+
+        height: 400px;
+        width: 300px;
+        flex-direction: column;
     
     }
 
