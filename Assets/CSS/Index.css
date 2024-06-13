@@ -56,8 +56,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    padding: 15px 34px 15px 15px;
-    z-index: 2;
+    z-index: 3;
     cursor: default;
 
 }
@@ -75,6 +74,7 @@ header #desktop {
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    padding: 15px 34px 15px 15px;
 
 }
 
@@ -83,6 +83,7 @@ header #mobile {
     display: none;
     justify-content: space-evenly;
     gap: 15px;
+    padding: 15px;
 
 }
 
@@ -179,6 +180,12 @@ main {
 /* Responsividade: */
 
 @media (max-width: 1200px) {
+    
+    header {
+
+        border-bottom: 2px solid var(--main-color);
+
+    }
 
     header #desktop {
 

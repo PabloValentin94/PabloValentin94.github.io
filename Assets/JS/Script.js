@@ -4,17 +4,16 @@ const container = document.getElementById("container");
 
 const banner = document.getElementById("home").querySelector("aside");
 
-const montanha_distante = document.getElementById("montanha_distante");
+const paisagem = [
 
-const montanha_frontal = document.getElementById("montanha_frontal");
+    document.getElementById("montanha_distante"),
+    document.getElementById("montanha_frontal"),
+    document.getElementById("arbusto_alto"),
+    document.getElementById("arbusto_baixo"),
+    document.getElementById("folha_esquerda"),
+    document.getElementById("folha_direita")
 
-const arbusto_alto = document.getElementById("arbusto_alto");
-
-const arbusto_baixo = document.getElementById("arbusto_baixo");
-
-const folha_esquerda = document.getElementById("folha_esquerda");
-
-const folha_direita = document.getElementById("folha_direita");
+];
 
 // Funções:
 
@@ -24,27 +23,35 @@ function getWindowHeight()
     if(window.innerHeight < 640)
     {
 
-        container.onscroll = null;
+        resetParallaxEffect();
 
     }
 
-    else
-    {
+}
 
-        container.onscroll = () => {
+function resetParallaxEffect()
+{
 
-            parallaxEffect();
-        
-        }
+    paisagem[0].style = "left: 0; right: 0; bottom: 0;";
 
-    }
+    paisagem[1].style = "left: 0; right: 0; bottom: 0;";
+
+    paisagem[2].style = "left: 0; right: 0; bottom: 0;";
+
+    paisagem[3].style = "left: 0; right: 0; bottom: 0;";
+
+    paisagem[4].style = "left: 0; right: 0; bottom: 0;";
+
+    paisagem[5].style = "left: 0; right: 0; bottom: 0;";
+
+    banner.style = "align-items: center; justify-content: center;";
 
 }
 
 function parallaxEffect()
 {
 
-    const value = document.getElementById("container").scrollTop;
+    const value = container.scrollTop;
 
     if(value <= document.getElementById("home").clientHeight)
     {
@@ -52,24 +59,24 @@ function parallaxEffect()
         if(window.innerWidth > 1024)
         {
 
-            montanha_distante.style.transform = "translateY(" + (-value  * 0.25) + "px)";
+            paisagem[0].style.transform = "translateY(" + (-value  * 0.25) + "px)";
 
-            montanha_frontal.style.transform = "translateY(" + (-value * 0.3) + "px)";
+            paisagem[1].style.transform = "translateY(" + (-value * 0.3) + "px)";
 
         }
 
         else
         {
 
-            montanha_distante.style.transform = "translateY(" + (-value  * 0.15) + "px)";
+            paisagem[0].style.transform = "translateY(" + (-value  * 0.15) + "px)";
 
-            montanha_frontal.style.transform = "translateY(" + (-value * 0.1) + "px)";
+            paisagem[1].style.transform = "translateY(" + (-value * 0.1) + "px)";
 
         }
 
-        folha_esquerda.style.transform = "translateX(" + (-value * 0.5) + "px)";
+        paisagem[4].style.transform = "translateX(" + (-value * 0.5) + "px)";
 
-        folha_direita.style.transform = "translateX(" + (value  * 0.5) + "px)";
+        paisagem[5].style.transform = "translateX(" + (value  * 0.5) + "px)";
 
         banner.style.transform = "translateY(" + value + "px)";
 
@@ -88,6 +95,17 @@ window.onload = () => {
 window.onresize = () => {
 
     getWindowHeight();
+
+}
+
+container.onscroll = () => {
+
+    if(window.innerHeight >= 640)
+    {
+
+        parallaxEffect();
+
+    }
 
 }
 
