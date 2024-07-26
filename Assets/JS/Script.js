@@ -2,7 +2,7 @@
 
 const container = document.getElementById("container");
 
-const banner = document.getElementById("home").querySelector("aside");
+const banner = document.getElementById("banner");
 
 const paisagem = [
 
@@ -32,17 +32,11 @@ function getWindowHeight()
 function resetParallaxEffect()
 {
 
-    paisagem[0].style = "left: 0; right: 0; bottom: 0;";
+    paisagem.forEach(item_paisagem => {
 
-    paisagem[1].style = "left: 0; right: 0; bottom: 0;";
+        item_paisagem.style = "left: 0; right: 0; bottom: 0;";
 
-    paisagem[2].style = "left: 0; right: 0; bottom: 0;";
-
-    paisagem[3].style = "left: 0; right: 0; bottom: 0;";
-
-    paisagem[4].style = "left: 0; right: 0; bottom: 0;";
-
-    paisagem[5].style = "left: 0; right: 0; bottom: 0;";
+    });
 
     banner.style = "align-items: center; justify-content: center;";
 

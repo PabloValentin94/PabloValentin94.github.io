@@ -26,7 +26,7 @@
 
 }
 
-#home aside {
+#home #banner {
 
     height: 450px;
     width: 900px;
@@ -41,7 +41,7 @@
 
 }
 
-#home aside a {
+#home #banner #photo {
 
     height: 300px;
     width: 300px;
@@ -52,6 +52,7 @@
     background-position: center;
     border: 1px solid var(--main-color);
     border-radius: 50%;
+    text-decoration: none;
     animation: Photo_Transition 3s linear infinite alternate running;
     overflow: hidden;
     cursor: pointer;
@@ -67,7 +68,7 @@
 
 */
 
-#home aside a:hover {
+#home #banner #photo:hover {
 
     background-image: url("../Images/GitHub.png") !important;
     animation-play-state: paused;
@@ -102,6 +103,47 @@
 
 }
 
+#home #title #contacts {
+
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 15px;
+
+}
+
+#home #title #contacts a {
+
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    text-decoration: none;
+    padding: 10px;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+#home #title #contacts a:hover {
+
+    background-color: var(--contrast-color);
+
+}
+
+#home #title #contacts a i {
+
+    font-size: 35px;
+    color: var(--main-color);
+
+}
+
 /* Animações: */
 
 @keyframes Photo_Transition {
@@ -124,7 +166,7 @@
 
 @media (max-width: 1050px) {
 
-    #home aside {
+    #home #banner {
 
         height: 300px;
         width: 650px;
@@ -132,7 +174,7 @@
     
     }
 
-    #home aside a {
+    #home #banner #photo {
 
         height: 200px;
         width: 200px;
@@ -151,16 +193,28 @@
     
     }
 
+    #home #title #contacts a i {
+
+        font-size: 28px;
+
+    }
+
 }
 
 @media (max-width: 767px) {
 
-    #home aside {
+    #home #banner {
 
-        height: 400px;
+        height: 450px;
         width: 300px;
         flex-direction: column;
     
+    }
+
+    #home #title #contacts a i {
+
+        font-size: 20px;
+
     }
 
 }
