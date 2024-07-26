@@ -84,6 +84,17 @@ window.onload = () => {
 
     getWindowHeight();
 
+    var links = document.getElementsByClassName("external_link");
+
+    for(var i = 0; i < links.length; i++)
+    {
+
+        link = links[i];
+
+        link.target = "_blank";
+
+    }
+
 }
 
 window.onresize = () => {
