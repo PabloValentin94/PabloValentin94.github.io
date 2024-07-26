@@ -132,9 +132,9 @@ header #desktop nav a, header #mobile a {
 header #desktop nav a:nth-child(1), header #desktop nav a:hover, header #mobile a {
 
     background-color: var(--main-color);
-    border-radius: 50%;
+    border-radius: 10px;
     color: #000000;
-    padding: 15px;
+    padding: 10px;
 
 }
 
@@ -149,9 +149,9 @@ header #desktop nav:hover > a:not(:hover) {
 
 header #mobile select {
 
-    width: 80%;
+    width: 55%;
     min-width: 150px;
-    max-width: 90%;
+    max-width: 60%;
     background-color: var(--contrast-color);
     outline: 1px solid var(--main-color);
     font-size: 20px;
@@ -181,12 +181,6 @@ main {
 
 @media (max-width: 1200px) {
     
-    header {
-
-        border-bottom: 2px solid var(--main-color);
-
-    }
-
     header #desktop {
 
         display: none;
