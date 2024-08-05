@@ -45,7 +45,7 @@
     font-size: 25px;
     color: var(--neutral-color);
     line-height: 60px;
-    text-align: start;
+    text-align: justify;
 
 }
 
@@ -123,12 +123,6 @@
     #about-me article {
 
         width: 100%;
-    
-    }
-
-    #about-me article p {
-
-        text-align: center;
     
     }
 
